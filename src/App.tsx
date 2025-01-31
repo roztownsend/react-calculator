@@ -19,7 +19,7 @@ const App: React.FC = () => {
     try {
       setResult(eval(result).toString())
     } catch (error: any) {
-      setResult("Error")
+      setResult("Error") 
     }
   }
 
@@ -27,6 +27,8 @@ const App: React.FC = () => {
 
   const operatorButtonArray: string[] = ['.', '/', '*', '-', '+'];
   
+
+  //add type? is it worth adding an interface here?
   const specialOperators = {
     "AC": clear,
     "DE": deleteEl,
@@ -74,7 +76,7 @@ const App: React.FC = () => {
 
         {numberButtonRenderer(6,9)}
         {operatorButtonRenderer(4,5)}
-        
+
         {numberButtonRenderer(9,11)}
         {specialOperatorButtons("=")}
       </div>
