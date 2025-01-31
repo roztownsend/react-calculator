@@ -15,18 +15,19 @@
   }
 
   .buttons {
-    @apply grid grid-cols-4 gap-4 mt-4
+    @apply grid grid-cols-4 grid-rows-5 gap-4 mt-4 
   }
-
+  
   button {
     @apply transition duration-300 active:translate-x-1 text-xl
   }
 
   .number {
-    @apply bg-slate-300 text-blue-700 rounded-lg p-2
+    @apply bg-slate-300 text-blue-700 rounded-lg p-2 
   }
 
   .operator {
     @apply bg-blue-500 text-white rounded-lg p-2
   }
 }
+
